@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc =  new Scanner(System.in);
+		
+		//variaveis
+		int x;
+		String s1, s2, s3;
+		
+		//Leitura de dados até a quebra de linha.
+		//Quando utilizamos um comando de leitura diferente
+		//do nextLine() ele fica pendente, então temos que
+		//utilizalo sozinho para não dar erro.
+		
+		x = sc.nextInt();
+		//Limpa o buffer de leitura
+		sc.nextLine();
+		//Limpa o buffer de leitura
+		s1 = sc.nextLine();
+		s2 = sc.nextLine();
+		s3 = sc.nextLine();
+		
+		//Mostrar na console
+		//Sysout + CRTL/Space para o autocomplete
+		
+		System.out.println("Dados digitados: ");
+		System.out.println(x);
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		
+		
+		sc.close();
+		
+	}
+
+}
